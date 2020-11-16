@@ -3,3 +3,16 @@ extends layout
 block content
   h1= title
   p Welcome to test#{title}
+
+nav.navbar.navbar-expand-lg.navbar-light(style='background-color: #ffffff;')
+  a.navbar-brand(href='#', style='color: #7F3F90; ')
+    img.d-inline-block.align-top(src='/picture/pea.png', width='30', height='30', alt='', loading='lazy')
+    |           MATERIALS PLANNING &amp; MANAGEMENT SYSTEM
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarNavAltMarkup.collapse.navbar-collapse.container
+    .navbar-nav.col-md-9
+      a.nav-link.achv.active.col-md-2.text-center(href='#', style='color: #7F3F90; border-top-left-radius: 10px;border-bottom-left-radius: 10px; border: 1px solid #7F3F90;') &#xE42;&#xE04;&#xE23;&#xE07;&#xE01;&#xE32;&#xE23;
+      a.nav-link.achv.col-md-2.text-center(href='#', style='color: #7F3F90;border-radius: 0px; border: 1px solid #7F3F90;') &#xE04;&#xE25;&#xE31;&#xE07;
+      a.nav-link.achv.col-md-2.text-center(href='#', style='color: #7F3F90;border-radius: 0px; border: 1px solid #7F3F90;') &#xE40;&#xE02;&#xE15;
+      a.nav-link.disabled.achv.col-md-2.text-center(href='#', tabindex='-1', aria-disabled='true', style='color: #7F3F90; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border: 1px solid #7F3F90;') Menu4
