@@ -28,8 +28,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // WEB
 var index = require('./routes/indexRoutes');
 var users = require('./routes/userRoutes');
+var chart = require('./routes/chartRoutes');
 app.use('/', index);
 app.use('/users', users);
+app.use('/chart', chart);
 // API 
 var userApis = require('./routes/api/userRoutes');
 app.use('/api/users', userApis);
