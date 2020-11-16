@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  .container-fluid
+    .row
+      .col-12.col-sm-6
+        p Welcome toooxxxo chart server pure na ja MPMS MPMSv2 #{title}
+
+        
+        style
+          include ../styles/style.css
+        script(src="https://cdn.amcharts.com/lib/4/core.js")
+        script(src="https://cdn.amcharts.com/lib/4/charts.js")
+        script(src="https://cdn.amcharts.com/lib/4/themes/spiritedaway.js")
+        script(src="https://cdn.amcharts.com/lib/4/themes/animated.js")
+        script
+          include ../includes/amchart.js
+        div#chartdiv
+        
+        block test
